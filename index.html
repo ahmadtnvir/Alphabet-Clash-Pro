@@ -17,7 +17,6 @@
       rel="stylesheet"
     />
 
-
     <title>Alphabet-Clash-Pro</title>
 
     <!-- !----------- Link with css file --------------->
@@ -32,17 +31,103 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-
   </head>
   <body class="bg-[#010313] min-h-screen">
-    <main class="min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center flex justify-center items-center">
+    <main
+      class="min-h-screen bg-[url('./images/background.png')] bg-no-repeat bg-center flex justify-center items-center"
+    >
+      <section>
         <div class="text-white flex flex-col items-center">
-        <h1 class="anton-font-regular text-[170px]">ALPHABET CLASH</h1>
-        <p class="poppins-font-medium text-2xl mt-20">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button class="btn bg-white mt-10">Play Now</button>
-
+          <h1 class="anton-font-regular text-[170px]">ALPHABET CLASH</h1>
+          <p class="poppins-font-medium text-2xl mt-20">
+            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+          </p>
+          <button onclick="play()" class="btn bg-white mt-10">Play Now</button>
         </div>
-    </main>
+      </section>
 
+      <section>
+        <div class="play-ground hidden">
+          <!-- !--------------- screen  ------------------->
+          <div>
+            <div
+              class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] mb-10"
+            >
+              <div class=" flex justify-center">
+                <p class="bg-[#010313CC] text-[#FFFFFF] px-7 pb-4 rounded-b-xl">Don't watch keyboard  while playing...</p>
+              </div>
+              <div class="flex justify-center items-center h-full">
+                <p class="text-[#010313] poppins-font-extrabold text-9xl">Y</p>
+              </div>
+            </div>
+            
+          </div>
+  
+          <!-- !---------------- keyboard ----------------->
+          <div class="poppins-font-semibold text-xl">
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd w-[59px] h-[57px]">q</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">w</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">e</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">r</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">t</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">y</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">u</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">i</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">o</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">p</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd w-[59px] h-[57px]">a</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">s</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">d</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">f</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">g</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">h</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">j</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">k</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">l</kbd>
+            </div>
+            <div class="flex justify-center gap-1 my-1 w-full">
+              <kbd class="kbd w-[59px] h-[57px]">z</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">x</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">c</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">v</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">b</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">n</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">m</kbd>
+              <kbd class="kbd w-[59px] h-[57px]">/</kbd>
+            </div>
+          </div>
+  
+          <!--!------------------ life line --------------->
+          <div class="flex justify-between mt-10 inter-font-medium">
+            <button
+              class="btn rounded-full bg-[#894189] text-[#FFFFFF] border-none py-4 px-7 text-xl"
+            >
+              Life
+              <img src="./images/heart.svg" alt="" />
+              <span>1</span>
+            </button>
+            <button
+              class="btn rounded-full bg-[#360490] text-[#FFFFFF] border-none py-4 px-7 text-xl"
+            >
+              Score
+              <img src="./images/dollar.svg" alt="" />
+              <span>1</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+      <div class="flex hidden peer-aria-hidden: flex-col justify-center items-center gap-5 text-white bg-gradient-to-r from-[#FFFFFF8F] to-[#98979700] p-4 rounded-2xl">
+        <h1 class="text-6xl"><span class="poppins-font-extrabold">Score:</span><span>14</span></h1>
+        <button class="btn h-14 poppins-font-semibold text-2xl py-4 px-8">Play Again</button>
+        <p>Practice will make you Pro</p>
+      </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>
