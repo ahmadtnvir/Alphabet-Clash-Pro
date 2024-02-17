@@ -108,23 +108,23 @@
             >
               Life
               <img src="./images/heart.svg" alt="" />
-              <span>1</span>
+              <span id="current-life">5</span>
             </button>
             <button
               class="btn rounded-full bg-[#360490] text-[#FFFFFF] border-none py-4 px-7 text-xl"
             >
               Score
               <img src="./images/dollar.svg" alt="" />
-              <span>1</span>
+              <span id="current-score">0</span>
             </button>
           </div>
         </div>
       </section>
 
-      <section>
-      <div class="flex hidden peer-aria-hidden: flex-col justify-center items-center gap-5 text-white bg-gradient-to-r from-[#FFFFFF8F] to-[#98979700] p-4 rounded-2xl">
-        <h1 class="text-6xl"><span class="poppins-font-extrabold">Score:</span><span>14</span></h1>
-        <button class="btn h-14 poppins-font-semibold text-2xl py-4 px-8">Play Again</button>
+      <section id="Score-board" class="hidden">
+      <div class="flex peer-aria-hidden: flex-col justify-center items-center gap-5 text-white bg-gradient-to-r from-[#FFFFFF8F] to-[#98979700] p-4 rounded-2xl">
+        <h1 class="text-6xl"><span class="poppins-font-extrabold">Score:</span><span id="final-score">14</span></h1>
+        <button onclick="play()" class="btn h-14 poppins-font-semibold text-2xl py-4 px-8">Play Again</button>
         <p>Practice will make you Pro</p>
       </div>
       </section>

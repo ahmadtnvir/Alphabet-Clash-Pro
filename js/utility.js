@@ -13,6 +13,11 @@ function setBackgroundColor(elementId) {
     getAlphabetId.classList.add('bg-orange-400');
 }
 
+function removeBackgroundColor(elementId) {
+    const getAlphabetId = document.getElementById(elementId);
+    getAlphabetId.classList.remove('bg-orange-400');
+}
+
 function getRandomAlphabet() {
     const alphabetsString = 'abcdefghihklmnopqrstuvwxyz';
     const alphabets = alphabetsString.split('');
@@ -22,4 +27,16 @@ function getRandomAlphabet() {
 
     const alphabet = alphabets[index];
     return alphabet;
+}
+
+function getElementByIdTextConvertToNumber(elementId) {
+    const element = document.getElementById(elementId);
+    const elementText = element.innerText;
+    const convertStrToNum = parseInt(elementText);
+    return convertStrToNum;
+}
+
+function setElementByIdText(elementId , value) {
+    const element = document.getElementById(elementId);
+    element.innerText = value;
 }
